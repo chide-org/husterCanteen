@@ -1,0 +1,57 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto; 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      /* 固定位置相关属性 */
+      position: fixed;
+      top: 10%; /* 距离顶部20%的距离 */
+}
+h2 {
+  margin-top: 0;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+tips {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    color: grey;
+    line-height: 1.5;
+    white-space: pre-line;
+}

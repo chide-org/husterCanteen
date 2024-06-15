@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>huster食堂</title>
+    <link rel="icon" href="huster食堂.png" type="image/x-icon" />
+    <link rel="stylesheet" href="push.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <script src="push.js" defer></script>
+    <script src="fetch.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="nav.js" defer></script>
+  </head>
+  <body>
+    <ul id="nav">
+      <li class="slide1"></li>
+      <li class="slide2"></li>
+      <li><a href="index.html">Qurey</a></li>
+      <li><a href="push.html">Push</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+    <div class="container">
+      <h2>Push Interface</h2>
+      <label for="action">选择操作：</label>
+      <select id="action">
+        <option value="addDish">添加菜品</option>
+        <option value="deleteDish">删除记录</option>
+        <option value="addCanteen">添加食堂</option>
+      </select>
+
+      <div id="formContainer">
+        <!-- 表单内容将动态生成 -->
+        <label for="canteenId">食堂：</label>
+        <select id="canteenId" name="canteenId" required>
+          <option value="">选择食堂</option>
+        </select>
+        <label for="dishName">菜品名称：</label>
+        <input type="text" id="dishName" name="dishName" required />
+        <label for="priceRange">价格范围：</label>
+        <input
+          type="text"
+          id="priceRange"
+          name="priceRange"
+          placeholder="例如：10-20"
+          required
+        />
+        <label for="flavor">评价：</label>
+        <input type="text" id="flavor" name="flavor" required />
+      </div>
+
+      <button onclick="submitForm()">提交</button>
+      <tips>
+        添加食堂时请写出全名，小名可放至括弧中，如：韵苑学生食堂（韵酒）
+        数据提交速度因网速而定，切勿重复提交，提交后最晚10s再次刷新即可看到修改
+      </tips>
+    </div>
+  </body>
+</html>
